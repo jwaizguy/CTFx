@@ -12,7 +12,7 @@ jobs:
     runs-on: [ ubuntu-latest ]
     steps:
       - name: Checkout Source
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
       - name: Polaris Scan
         uses: blackduck-inc/black-duck-security-scan@v2
         with:
@@ -34,4 +34,4 @@ jobs:
           polaris_upload_sarif_report: true
           
           ### Signature scan
-          polaris_test_sca_type: "SCA-SIGNATURE"
+          #polaris_test_sca_type: "SCA-SIGNATURE"
